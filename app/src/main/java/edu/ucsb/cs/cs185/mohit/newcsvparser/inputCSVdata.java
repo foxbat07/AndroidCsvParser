@@ -7,7 +7,10 @@ import java.util.ArrayList;
  */
 public class inputCSVdata {
                             String name;
+
                             //ArrayList<Float> floatData;
+
+    /*
                             Float economy;
                             Float cylinders;
                             Float displacement;
@@ -15,6 +18,18 @@ public class inputCSVdata {
                             Float weight;
                             Float accelerate;
                             Float year;
+*/
+
+
+                            Float []dataFloats ;
+
+                            public inputCSVdata()
+                            {
+                                name = null;
+                                dataFloats = new Float[7];
+
+                            }
+
 
 
 

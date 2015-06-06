@@ -64,7 +64,7 @@ public class MainActivity extends ActionBarActivity {
             inputCSVdata tempRowdata = new inputCSVdata();
 
             tempRowdata.name = nextLine[0];
-
+            /**
             try {
 
 
@@ -86,6 +86,21 @@ public class MainActivity extends ActionBarActivity {
                 tempRowdata.weight = 0.0f;
                 tempRowdata.accelerate = 0.0f;
                 tempRowdata.year = 0.0f;
+
+            }
+
+            //*/
+            try {
+
+                for ( int i = 0 ; i < nextLine.length -1 ; i++ )
+                     tempRowdata.dataFloats[i] = Float.parseFloat(nextLine[i+1]);
+
+            }
+            catch(NumberFormatException ex)
+            {
+                System.out.println("found a 0 lol ");
+                for ( int i = 0 ; i < nextLine.length-1 ; i++ )
+                    tempRowdata.dataFloats[i] = 0.0f;
 
             }
 
